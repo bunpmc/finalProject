@@ -1,0 +1,154 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(221, 221, 221);
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+img{
+    border: 5px solid rgba(13, 13, 230,0.5);
+    border-radius: 35px;
+    width: 200px;
+    height: 300px;
+}
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p:nth-child(1) {
+    font-size: 40px;
+    color:rgba(78, 12, 141, 0.868);
+    font-weight: bold;
+}
+
+p:nth-child(2) {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.grid figcaption {
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid figure:nth-child(1) figcaption{
+    color: rgba(98, 78, 136, 0.5);
+}
+
+.grid figure:nth-child(2) figcaption{
+    color: rgba(100, 130, 173, 1);
+}
+
+.grid figure:nth-child(3) figcaption{
+    color: rgba(100, 130, 173, 1);
+}
+
+.grid figure:nth-child(4) figcaption{
+    color: rgba(106, 156, 137, 1);
+}
+
+.grid figure:nth-child(5) figcaption{
+    color: rgba(152, 43, 28, 0.6);
+}
+
+.grid figure:nth-child(6) figcaption{
+    color: rgba(255, 94, 0, 0.5);
+}
+
+.grid figure:nth-child(7) figcaption{
+    color: rgba(150, 43, 28, 0.5);
+}
+
+.grid figure:nth-child(8) figcaption{
+    color: rgba(194, 25, 232, 0.5);
+}
+
+.grid figure:nth-child(9) figcaption{
+    color: rgba(150, 43, 28, 0.5);
+}
+
+@media screen and (min-width: 772px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .figure {
+        border-radius: 25px;
+    }
+
+    .figure:nth-last-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    figure:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .figure {
+        border-radius: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+@media (prefers-contrast: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    figure {
+        border: 5px solid rgba(0, 0, 0, 0.5);
+    }
+}
