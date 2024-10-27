@@ -111,7 +111,7 @@ p:nth-child(2) {
     }
 
     .figure {
-        border-radius: 25px;
+        border-radius: 50%;
     }
 
     .figure:nth-last-child(1) {
@@ -126,7 +126,7 @@ p:nth-child(2) {
         grid-gap: 10px;
     }
 
-    figure:nth-child(3) {
+    figure:nth-child(3n) {
         grid-column-start: 1;
         grid-column-end: 3;
     }
